@@ -1,0 +1,8 @@
+kafka:
+  bootstrap:
+    servers: kafka-1:30103,kafka-2:30103,kafka-0:30103
+  acks: all
+  retries: 3
+  serializer: org.apache.kafka.common.serialization.StringSerializer
+  deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  autoCommitInterval: 1000
